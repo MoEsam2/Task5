@@ -30,6 +30,7 @@ public class Main  {
 
         else if (num == Shape.RECTANGLE.ordinal())
          {
+             System.out.println("Enter length and width of the Rectangle");
              double length=in.nextDouble();
              double width=in.nextDouble();
              System.out.println("Rectangular Area : "+shapeArea.Area(length,width));
@@ -40,7 +41,7 @@ public class Main  {
     {
         for (int i=0;i<list.size();i++)
         {
-            System.out.println("Circular Area for "+i+" th radius "+shapeArea.Area((Double) list.get(i)));
+            System.out.println("Circular Area for "+(i+1)+"th radius "+shapeArea.Area((Double) list.get(i)));
         }
     }
      enum Shape
